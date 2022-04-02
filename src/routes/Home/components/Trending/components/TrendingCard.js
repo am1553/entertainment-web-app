@@ -13,12 +13,11 @@ function TrendingCard(props) {
     setBookMark(!bookMark)
   }
 
-  console.log(props.background_image)
 
   return (
     <div className='trending_card'>
-      
-        <img src={ props.background_image } alt="" />
+
+        <img src={ props.image } alt="" className='background_image'/>
 
         <button className="bookmark_button" onClick={ handleBookMark }>
             <img src={ bookMark === true? BookMarkFullIcon : BookMarkIcon } alt="" />

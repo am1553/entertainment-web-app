@@ -3,10 +3,13 @@ import Data from '../../../../data.json'
 import TrendingCard from './components/TrendingCard'
 
 function Trending() {
+
+console.log(Data[0].thumbnail.trending.small)
+
   return (
     <div className='main_page__home__trending'>
         <h2>Trending</h2>
-
+        <img src={ Data[0].thumbnail.trending.small } alt="" />
         <div className="carousel_container">
 
             {
@@ -14,7 +17,7 @@ function Trending() {
                     if(data.isTrending === true) {
                         return(
                             <TrendingCard
-                            background_image = { data.thumbnail.trending.small }
+                            image = { data.thumbnail.trending.small }
                             title = { data.title }
                             key = { key }
                             />
