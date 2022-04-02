@@ -17,8 +17,12 @@ h1 {
   font-size: 32px;
 }
 
-h2, h3 {
-  font-size: 24px;
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: clamp(0.9375rem, 4vw, 1.5rem);
 }
 
 h4 {
@@ -46,6 +50,28 @@ body img {
 
 body button {
   cursor: pointer;
+}
+
+body input {
+  font-size: 1rem;
+  outline: none;
+  color: white;
+}
+
+body input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+body input:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+body input:focus::-ms-input-placeholder {
+  opacity: 0;
+}
+
+body input:focus::placeholder {
+  opacity: 0;
 }
 
 .login_signup_component header {
@@ -167,5 +193,109 @@ body button {
   width: 30px;
   border: 1px solid white;
   border-radius: 50%;
+}
+
+.main_page__search_bar {
+  margin: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 3rem;
+  padding: 0 1rem;
+}
+
+.main_page__search_bar input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+}
+
+.main_page__search_bar img {
+  width: 30px;
+  margin-right: 1rem;
+}
+
+.trending_card {
+  background-color: #161d2f;
+  height: 140px;
+  min-width: 240px;
+  border-radius: 0.5rem;
+  position: relative;
+  margin: 1rem 1rem 2rem 0;
+}
+
+.trending_card .bookmark_button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  width: 35px;
+  height: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.trending_card .info_wrapper {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+}
+
+.trending_card .info_wrapper .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 0 0.5rem;
+}
+
+.trending_card .info_wrapper .information li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 0.7rem;
+}
+
+.trending_card .info_wrapper .information li img {
+  width: 15px;
+  height: 15px;
+  margin: 0 0.3rem 0 0;
+}
+
+.main_page__home__trending {
+  padding: 0 1rem 0;
+  overflow: hidden;
+}
+
+.main_page__home__trending .carousel_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
 }
 /*# sourceMappingURL=index.css.map */

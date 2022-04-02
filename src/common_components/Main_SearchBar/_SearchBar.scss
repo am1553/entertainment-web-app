@@ -1,0 +1,20 @@
+.main_page {
+    &__search_bar {
+        margin: 1rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+        padding: 0 1rem;
+        input {
+            flex: 1;
+            padding: 0.5rem;
+            background-color: transparent;
+            border: none;
+        }
+        img {
+            width: 30px;
+            margin-right: 1rem;
+        }
+    }
+}

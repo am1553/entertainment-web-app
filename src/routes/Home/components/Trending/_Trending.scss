@@ -1,0 +1,12 @@
+@import './components/TrendingCard';
+
+.main_page__home {
+    &__trending {
+        padding: 0 1rem 0;
+        overflow: hidden;
+        .carousel_container {
+            display: flex;
+            overflow-x: scroll;
+        }
+    }
+}

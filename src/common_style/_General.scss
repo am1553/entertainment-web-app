@@ -12,5 +12,12 @@ body {
     button {
         cursor: pointer;
     }
-    
+    input {
+        font-size: 1rem;
+        outline: none;
+        color: $white;
+    }
+    input:focus::placeholder {
+        opacity: 0;
+    }
 }

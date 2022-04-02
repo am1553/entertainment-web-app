@@ -1,0 +1,42 @@
+.trending_card {
+    background-color: $navy-blue;
+    height: 140px;
+    min-width: 240px;
+    border-radius: 0.5rem;
+    position: relative;
+    margin: 1rem 1rem 2rem 0;
+    .bookmark_button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border: none;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .info_wrapper {
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        .information {
+            display: flex;
+            justify-content: space-around;
+            margin: 0 0 0.5rem;
+            li {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 0.7rem;
+                img {
+                    width: 15px;
+                    height: 15px;
+                    margin: 0 0.3rem 0 0;
+                }
+            }
+        }
+    }
+}
