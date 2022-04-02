@@ -10,7 +10,7 @@ function Recommended() {
         <div className="recommended_card_wrapper">
 
             {
-                Data.map( (data, key) => {
+              Data && Data.map( (data, key) => {
                     if(data.isTrending === false) {
                         return(
                             <RecommendedCard 

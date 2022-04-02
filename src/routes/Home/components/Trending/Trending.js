@@ -11,7 +11,7 @@ function Trending() {
         <div className="carousel_container">
 
             {
-                Data.map( (data, key) => {
+              Data && Data.map( (data, key) => {
                     if(data.isTrending === true) {
                         return(
                             <TrendingCard 

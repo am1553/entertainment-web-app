@@ -16,7 +16,7 @@ function RecommendedCard(props) {
     <div className='recommended_card_container'>
         <div className="recommended_card_container__card">
 
-          <img src={ props.image } alt='' />
+          <img src={ props.image } alt='' className='background_image' />
 
           <button className="bookmark_button" onClick={ handleBookMark }>
             <img src={ bookMark === true ? BookMarkFullIcon : BookMarkIcon } alt="" />
@@ -25,9 +25,9 @@ function RecommendedCard(props) {
         </div>
         <div className="info_wrapper">
             <ul className="information">
-                <li>{ props.year }</li>
-                <li><img src={ MovieCategoryIcon } alt="" />Movie</li>
-                <li>{ props.category }</li>
+                <li className='text-small' >{ props.year }</li>
+                <li className='text-small' ><img src={ props.category === 'Movie' ? MovieCategoryIcon : TvSeriesCategoryIcon } alt="" />{ props.category }</li>
+                <li className='text-small' >{ props.rating }</li>
             </ul>
             <h4>{ props.title }</h4>
         </div>
