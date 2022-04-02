@@ -231,6 +231,11 @@ body input:focus::placeholder {
   border-radius: 0.5rem;
   position: relative;
   margin: 1rem 1rem 2rem 0;
+  overflow: hidden;
+}
+
+.trending_card .background_image {
+  width: 100%;
 }
 
 .trending_card .bookmark_button {
