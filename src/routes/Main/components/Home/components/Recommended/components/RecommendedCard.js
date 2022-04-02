@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import BookMarkIcon from '../../../../../assets/icon-bookmark-empty.svg'
-import BookMarkFullIcon from '../../../../../assets/icon-bookmark-full.svg'
-import MovieCategoryIcon from '../../../../../assets/icon-category-movie.svg'
-import TvSeriesCategoryIcon from '../../../../../assets/icon-category-tv.svg'
+import BookMarkIcon from '../../../../../../../assets/icon-bookmark-empty.svg'
+import BookMarkFullIcon from '../../../../../../../assets/icon-bookmark-full.svg'
+import MovieCategoryIcon from '../../../../../../../assets/icon-category-movie.svg'
+import TvSeriesCategoryIcon from '../../../../../../../assets/icon-category-tv.svg'
 
 function RecommendedCard(props) {
 

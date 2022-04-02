@@ -5,9 +5,12 @@ import MoviesNav from '../../assets/icon-nav-movies.svg'
 import TvSeriesNav from '../../assets/icon-nav-tv-series.svg'
 import BookMarkNav from '../../assets/icon-nav-bookmark.svg'
 import AvatarImage from '../../assets/image-avatar.png'
+import Home from '../../routes/Main/components/Home/Home'
+import Movies from '../../routes/Main/components/Movies/Movies'
+import TvSeries from '../../routes/Main/components/TvSeries/TvSeries'
+import BookMarked from '../../routes/Main/components/BookMarked/BookMarked'
 
-
-function MainHeader() {
+function MainHeader(props) {
 
     const [homeNavActive, setHomeNavActive] = useState(true)
     const [movieNavActive, setMovieNavActive] = useState(false)
@@ -28,6 +31,7 @@ function MainHeader() {
                     setMovieNavActive(false)
                     setTvSeriesNavActive(false)
                     setBookMarkNavActive(false)
+                    props.menu_nav(<Home />)
                 }  } >
                 <img src={ HomeNav } alt="" />
             </li>
@@ -38,6 +42,7 @@ function MainHeader() {
                     setHomeNavActive(false)
                     setTvSeriesNavActive(false)
                     setBookMarkNavActive(false)
+                    props.menu_nav(<Movies />)
                 } }
             >
                 <img src={ MoviesNav } alt="" />
@@ -49,6 +54,7 @@ function MainHeader() {
                     setHomeNavActive(false)
                     setMovieNavActive(false)
                     setBookMarkNavActive(false)
+                    props.menu_nav(<TvSeries />)
                 } }
             >
                 <img src={ TvSeriesNav } alt="" />
@@ -60,6 +66,7 @@ function MainHeader() {
                     setHomeNavActive(false)
                     setMovieNavActive(false)
                     setTvSeriesNavActive(false)
+                    props.menu_nav(<BookMarked />)
                 } }
             >
                 <img src={ BookMarkNav } alt="" />

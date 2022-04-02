@@ -7,11 +7,11 @@ function SearchBar(props) {
   const handleSearch = (e) => {
     props.search_value(e.target.value)
     if(e.target.value === '') {
-      props.home_state(true)
       props.search_card_state(false)
+      props.panel_state(true)
     } else {
-      props.home_state(false)
       props.search_card_state(true)
+      props.panel_state(false)
     }
   }
 

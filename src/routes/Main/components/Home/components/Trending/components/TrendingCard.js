@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import MovieIcon from '../../../../../assets/icon-category-movie.svg'
-import TvSeriesIcon from '../../../../../assets/icon-category-tv.svg'
-import BookMarkIcon from '../../../../../assets/icon-bookmark-empty.svg'
-import BookMarkFullIcon from '../../../../../assets/icon-bookmark-full.svg'
+import MovieIcon from '../../../../../../../assets/icon-category-movie.svg'
+import TvSeriesIcon from '../../../../../../../assets/icon-category-tv.svg'
+import BookMarkIcon from '../../../../../../../assets/icon-bookmark-empty.svg'
+import BookMarkFullIcon from '../../../../../../../assets/icon-bookmark-full.svg'
 
 
 

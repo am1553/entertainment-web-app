@@ -1,6 +1,6 @@
 import React from 'react'
 import RecommendedCard from './components/RecommendedCard'
-import Data from '../../../../data.json'
+import Data from '../../../../../../data.json'
 
 
 function Recommended() {
