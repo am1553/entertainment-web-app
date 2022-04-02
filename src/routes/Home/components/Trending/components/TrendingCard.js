@@ -17,7 +17,9 @@ function TrendingCard(props) {
 
   return (
     <div className='trending_card'>
+      
         <img src={ props.background_image } alt="" />
+
         <button className="bookmark_button" onClick={ handleBookMark }>
             <img src={ bookMark === true? BookMarkFullIcon : BookMarkIcon } alt="" />
         </button>

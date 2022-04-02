@@ -2,7 +2,6 @@ import React from 'react'
 import Data from '../../../../data.json'
 import TrendingCard from './components/TrendingCard'
 
-
 function Trending() {
   return (
     <div className='main_page__home__trending'>
