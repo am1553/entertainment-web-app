@@ -1,6 +1,6 @@
 import Login from "./routes/Login/Login";
 import SignUp from "./routes/SignUp/SignUp";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 
 
@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router basename="/entertainment-web-app">
+    <Router hashType='hashbang' >
 
       <Routes>
         <Route exact path="/" />
