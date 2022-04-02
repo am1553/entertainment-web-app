@@ -9,10 +9,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/entertainment-web-app">
 
       <Routes>
-        <Route path="/" />
+        <Route exact path="/" />
         <Route path="/login" element={ <Login /> } />
         <Route path="/signup" element={ <SignUp /> } />
       </Routes>
