@@ -293,7 +293,7 @@ body input:focus::placeholder {
 }
 
 .main_page__home__trending {
-  padding: 0 1rem 0;
+  padding: 0 0 0 1rem;
   overflow: hidden;
 }
 
@@ -302,5 +302,86 @@ body input:focus::placeholder {
   display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
+}
+
+.recommended_card_container__card {
+  background-color: #161d2f;
+  width: 100%;
+  height: 150px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.recommended_card_container__card .background_image {
+  max-width: 100%;
+}
+
+.recommended_card_container__card .bookmark_button {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  right: 1rem;
+  top: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.recommended_card_container .info_wrapper {
+  margin-top: 0.5rem;
+}
+
+.recommended_card_container .info_wrapper .information {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.recommended_card_container .info_wrapper .information li {
+  margin-right: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recommended_card_container .info_wrapper .information li img {
+  margin-right: 0.3rem;
+}
+
+.recommended_card_container .info_wrapper h4 {
+  margin: 0.5rem 0 1rem;
+}
+
+.main_page__home__recommended {
+  padding: 0 1rem;
+}
+
+.main_page__home__recommended h2 {
+  margin: 2rem 0;
+}
+
+.main_page__home__recommended .recommended_card_wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
 }
 /*# sourceMappingURL=index.css.map */

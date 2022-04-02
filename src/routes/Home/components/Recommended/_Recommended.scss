@@ -1,0 +1,15 @@
+@import './components/RecommendedCard';
+.main_page__home {
+    &__recommended {
+        padding: 0 1rem;
+        h2 {
+            margin: 2rem 0;
+        }
+        .recommended_card_wrapper {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+        }
+    }
+}
