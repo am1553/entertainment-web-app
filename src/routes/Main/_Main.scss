@@ -1,3 +1,6 @@
 @import '../../common_components/Main_Header/MainHeader';
 @import '../../common_components/Main_SearchBar/SearchBar';
-@import '../Home/Home';
+@import '../Main/components/Home/Home';
+@import '../Main/components/Movies/Movies';
+@import '../Main/components/TvSeries/TvSeries';
+@import '../Main/components/BookMarked/BookMarked';

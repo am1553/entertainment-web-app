@@ -1,0 +1,12 @@
+@import '../../../../common_components/DataCard/DataCard';
+
+.main_page__movies {
+    padding: 0 1rem;
+    .movies_container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;
+        margin-right: 1rem;
+    }
+}
