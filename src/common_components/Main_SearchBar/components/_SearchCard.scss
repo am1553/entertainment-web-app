@@ -19,8 +19,8 @@
             }
         }
         .card {
-            width: 100%;
-            height: 110px;
+            width: clamp(10.25rem, 40vw, 13.75rem);
+            height: clamp(6.875rem, 20vw, 8.75rem);
             border-radius: 10px;
             overflow: hidden;
             position: relative;
@@ -45,3 +45,4 @@
     }
     
 }
+
