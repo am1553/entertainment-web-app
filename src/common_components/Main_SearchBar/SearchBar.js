@@ -21,7 +21,7 @@ function SearchBar(props) {
         <input 
         type="text" 
         placeholder={ props.nav_item === 'Home' ? 'Search for movies or Tv series' :
-                      props.nav_item === 'Movies' ? 'Search for movies' :
+                      props.nav_item === 'Movie' ? 'Search for movies' :
                       props.nav_item === 'TV Series' ? 'Search for TV series' :
                       'Search for bookmarked shows' 
                     } 
