@@ -89,7 +89,7 @@ body input:focus::placeholder {
 
 .login_signup_component__card {
   width: 90%;
-  max-width: 35rem;
+  max-width: 30rem;
   margin: 0 auto;
   padding: 0 1.5rem;
   background-color: #161d2f;
@@ -146,6 +146,12 @@ body input:focus::placeholder {
 .login_signup_component__card .card_span {
   color: #fc4747;
   cursor: pointer;
+}
+
+@media screen and (min-width: 580px) {
+  .login_signup_component header {
+    height: 12rem;
+  }
 }
 
 .main_page__header {
@@ -397,7 +403,7 @@ body input:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 164px;
+  max-width: 20rem;
   height: 110px;
 }
 
@@ -553,6 +559,10 @@ body input:focus::placeholder {
   padding: 0 1rem;
 }
 
+.main_page__movies h2 {
+  margin: 2rem 0;
+}
+
 .main_page__movies .movies_container {
   display: -ms-grid;
   display: grid;
@@ -639,6 +649,10 @@ body input:focus::placeholder {
 
 .main_page__tv_series {
   padding: 0 1rem;
+}
+
+.main_page__tv_series h2 {
+  margin: 2rem 0;
 }
 
 .main_page__tv_series .tv_series_container {
@@ -745,5 +759,12 @@ body input:focus::placeholder {
 
 .main_page {
   margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 580px) {
+  .main_page__home, .main_page__movies, .main_page__tv_series, .main_page__bookmarked {
+    max-width: 40rem;
+    margin: 0 auto;
+  }
 }
 /*# sourceMappingURL=index.css.map */

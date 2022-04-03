@@ -4,7 +4,7 @@ import Trending from './components/Trending/Trending'
 
 function Home() {
   return (
-    <div className='main_page__home'>
+    <div className='main_page__home' >
         <Trending />
         <Recommended />
     </div>

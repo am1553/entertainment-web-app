@@ -8,7 +8,7 @@
 
    &__card {
        width: 90%;
-       max-width: 35rem;
+       max-width: 30rem;
        margin: 0 auto;
         padding: 0 1.5rem;
         background-color: $navy-blue;
@@ -48,4 +48,12 @@
            cursor: pointer;
        }
    }
+}
+
+@media screen and (min-width: 580px) {
+    .login_signup_component {
+        header {
+            height: 12rem;
+        }
+    }
 }

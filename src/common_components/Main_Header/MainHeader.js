@@ -32,6 +32,7 @@ function MainHeader(props) {
                     setTvSeriesNavActive(false)
                     setBookMarkNavActive(false)
                     props.menu_nav(<Home />)
+                    props.nav_item('Home')
                 }  } >
                 <img src={ HomeNav } alt="" />
             </li>
@@ -43,6 +44,7 @@ function MainHeader(props) {
                     setTvSeriesNavActive(false)
                     setBookMarkNavActive(false)
                     props.menu_nav(<Movies />)
+                    props.nav_item('Movies')
                 } }
             >
                 <img src={ MoviesNav } alt="" />
@@ -55,6 +57,7 @@ function MainHeader(props) {
                     setMovieNavActive(false)
                     setBookMarkNavActive(false)
                     props.menu_nav(<TvSeries />)
+                    props.nav_item('TV Series')
                 } }
             >
                 <img src={ TvSeriesNav } alt="" />
@@ -67,6 +70,7 @@ function MainHeader(props) {
                     setMovieNavActive(false)
                     setTvSeriesNavActive(false)
                     props.menu_nav(<BookMarked />)
+                    props.nav_item('Bookmarked')
                 } }
             >
                 <img src={ BookMarkNav } alt="" />

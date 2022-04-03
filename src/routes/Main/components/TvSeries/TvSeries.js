@@ -5,6 +5,7 @@ import Data from '../../../../data.json'
 function TvSeries() {
   return (
     <div className='main_page__tv_series'>
+      <h2>TV Series</h2>
       <div className="tv_series_container">
         {
             Data.filter(data => {

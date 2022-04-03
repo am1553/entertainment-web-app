@@ -18,7 +18,15 @@ function SearchBar(props) {
   return (
     <div className='main_page__search_bar'>
         <img src= { SearchIcon } alt="" />
-        <input type="text" placeholder='Search for movies or Tv series' onChange={ handleSearch } />
+        <input 
+        type="text" 
+        placeholder={ props.nav_item === 'Home' ? 'Search for movies or Tv series' :
+                      props.nav_item === 'Movies' ? 'Search for movies' :
+                      props.nav_item === 'TV Series' ? 'Search for TV series' :
+                      'Search for bookmarked shows' 
+                    } 
+        onChange={ handleSearch } 
+        />
     </div>
   )
 }

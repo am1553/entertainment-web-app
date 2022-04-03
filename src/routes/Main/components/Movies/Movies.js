@@ -6,6 +6,7 @@ import Data from '../../../../data.json'
 function Movies() {
   return (
     <div className='main_page__movies'>
+        <h2>Movies</h2>
         <div className="movies_container">
         {
             Data.filter(data => {
