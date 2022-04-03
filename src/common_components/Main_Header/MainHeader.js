@@ -10,14 +10,13 @@ import Movies from '../../routes/Main/components/Movies/Movies'
 import TvSeries from '../../routes/Main/components/TvSeries/TvSeries'
 import BookMarked from '../../routes/Main/components/BookMarked/BookMarked'
 
+
 function MainHeader(props) {
 
     const [homeNavActive, setHomeNavActive] = useState(true)
     const [movieNavActive, setMovieNavActive] = useState(false)
     const [tvSeriesNavActive, setTvSeriesNavActive] = useState(false)
     const [bookMarkNavActive, setBookMarkNavActive] = useState(false)
-
-
   return (
     <div className='main_page__header'>
         <img src={ Logo } alt="" className='header_logo' />
@@ -77,8 +76,7 @@ function MainHeader(props) {
             </li>
 
         </nav>
-
-        <img src={ AvatarImage } alt="" className='user_avatar'/>
+        <img src={ AvatarImage } alt="" className='user_avatar' onClick={ ()=> props.logout_set_message(!props.logout_message)}/>
     </div>
   )
 }

@@ -1,0 +1,49 @@
+.logout_message {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .message_card {
+        background-color: $white;
+        width: 80%;
+        max-width: 30rem;
+        border-radius: 1rem;
+        padding: 1rem;
+        h3 {
+            text-align: center;
+            color: $navy-blue;
+            margin: 1rem 0;
+        }
+        .logout_button {
+            display: block;
+            width: 10rem;
+            height: 3rem;
+            margin: 1rem auto;
+            border-radius: 0.5rem;
+            border: none;
+            text-transform: uppercase;
+            background-color: $red;
+            color: $white;
+            cursor: pointer;
+            transition: all 500ms ease;
+        }
+        .logout_button:hover {
+            opacity: 0.8;
+            background-color: $white;
+            color: $red;
+        }
+        p {
+            text-align: center;
+            color: $navy-blue;
+            text-decoration: underline;
+            cursor: pointer;
+            font-weight: 500;
+        }
+    }
+}

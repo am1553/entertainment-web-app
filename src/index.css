@@ -167,6 +167,7 @@ body input:focus::placeholder {
   padding: 0 1rem;
   height: 5rem;
   background-color: #161d2f;
+  position: relative;
 }
 
 .main_page__header nav {
@@ -199,6 +200,7 @@ body input:focus::placeholder {
   width: 30px;
   border: 1px solid white;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1080px) {
@@ -928,6 +930,68 @@ body input:focus::placeholder {
     grid-column-gap: 1rem;
     grid-row-gap: 1rem;
   }
+}
+
+.logout_message {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logout_message .message_card {
+  background-color: white;
+  width: 80%;
+  max-width: 30rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.logout_message .message_card h3 {
+  text-align: center;
+  color: #161d2f;
+  margin: 1rem 0;
+}
+
+.logout_message .message_card .logout_button {
+  display: block;
+  width: 10rem;
+  height: 3rem;
+  margin: 1rem auto;
+  border-radius: 0.5rem;
+  border: none;
+  text-transform: uppercase;
+  background-color: #fc4747;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.logout_message .message_card .logout_button:hover {
+  opacity: 0.8;
+  background-color: white;
+  color: #fc4747;
+}
+
+.logout_message .message_card p {
+  text-align: center;
+  color: #161d2f;
+  text-decoration: underline;
+  cursor: pointer;
+  font-weight: 500;
 }
 
 .main_page {
