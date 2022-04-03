@@ -7,8 +7,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            min-width: 164px;
-            height: 110px;
+            width: clamp(10.25rem, 40vw, 13.75rem);
+            height: clamp(6.875rem, 20vw, 8.75rem);
             .background_image {
                 width: 100%;
             }

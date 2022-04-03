@@ -201,6 +201,55 @@ body input:focus::placeholder {
   border-radius: 50%;
 }
 
+@media screen and (min-width: 1080px) {
+  .main_page {
+    padding-left: 8rem;
+    padding-top: 2rem;
+  }
+  .main_page__header {
+    z-index: 100;
+    position: fixed;
+    height: 90vh;
+    width: 5rem;
+    top: 50%;
+    left: 1.5rem;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    border-radius: 1rem;
+  }
+  .main_page__header .header_logo {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  .main_page__header nav {
+    position: absolute;
+    top: 8rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main_page__header nav li {
+    margin-bottom: 2rem;
+  }
+  .main_page__header .user_avatar {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 .search_bar__card_container .info_wrapper .information {
   margin-top: 0.5rem;
   display: -webkit-box;
@@ -311,8 +360,8 @@ body input:focus::placeholder {
 
 .trending_card {
   background-color: #161d2f;
-  height: 140px;
-  min-width: 240px;
+  height: clamp(8.75rem, 25vw, 14.375rem);
+  min-width: clamp(15rem, 50vw, 29.375rem);
   border-radius: 0.5rem;
   position: relative;
   margin: 1rem 1rem 2rem 0;
@@ -403,8 +452,8 @@ body input:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 20rem;
-  height: 110px;
+  width: clamp(10.25rem, 40vw, 13.75rem);
+  height: clamp(6.875rem, 20vw, 8.75rem);
 }
 
 .recommended_card_container__card .background_image {
@@ -463,6 +512,13 @@ body input:focus::placeholder {
   margin: 0.1rem 0 1rem;
 }
 
+@media screen and (min-width: 980px) {
+  .recommended_card_container__card {
+    width: clamp(13.75rem, 30vw, 17.75rem);
+    height: clamp(8.75rem, 10vw, 10.875rem);
+  }
+}
+
 .main_page__home__recommended {
   padding: 0 1rem;
   margin-right: 1rem;
@@ -481,6 +537,35 @@ body input:focus::placeholder {
   grid-row-gap: 1rem;
 }
 
+@media screen and (min-width: 720px) {
+  .main_page__home__recommended {
+    padding: 0 1rem;
+    margin-right: 1rem;
+  }
+  .main_page__home__recommended h2 {
+    margin: 2rem 0;
+  }
+  .main_page__home__recommended .recommended_card_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main_page__home__recommended .recommended_card_wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
 .data_card .card {
   background-color: #161d2f;
   overflow: hidden;
@@ -495,8 +580,8 @@ body input:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 164px;
-  height: 110px;
+  width: clamp(10.25rem, 40vw, 13.75rem);
+  height: clamp(6.875rem, 20vw, 8.75rem);
 }
 
 .data_card .card .background_image {
@@ -573,6 +658,28 @@ body input:focus::placeholder {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 720px) {
+  .main_page__movies .movies_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main_page__movies .movies_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
 .data_card .card {
   background-color: #161d2f;
   overflow: hidden;
@@ -587,8 +694,8 @@ body input:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 164px;
-  height: 110px;
+  width: clamp(10.25rem, 40vw, 13.75rem);
+  height: clamp(6.875rem, 20vw, 8.75rem);
 }
 
 .data_card .card .background_image {
@@ -665,6 +772,28 @@ body input:focus::placeholder {
   margin-right: 1rem;
 }
 
+@media screen and (min-width: 720px) {
+  .main_page__tv_series .tv_series_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main_page__tv_series .tv_series_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
 .data_card .card {
   background-color: #161d2f;
   overflow: hidden;
@@ -679,8 +808,8 @@ body input:focus::placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-width: 164px;
-  height: 110px;
+  width: clamp(10.25rem, 40vw, 13.75rem);
+  height: clamp(6.875rem, 20vw, 8.75rem);
 }
 
 .data_card .card .background_image {
@@ -757,13 +886,35 @@ body input:focus::placeholder {
   margin: 2rem 0;
 }
 
+@media screen and (min-width: 720px) {
+  .main_page__bookmarked .bookmarked_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .main_page__bookmarked .bookmarked_container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 25% 25% 25% 25%;
+        grid-template-columns: 25% 25% 25% 25%;
+    grid-column-gap: 1rem;
+    grid-row-gap: 1rem;
+  }
+}
+
 .main_page {
   margin-bottom: 3rem;
 }
 
-@media screen and (min-width: 580px) {
-  .main_page__home, .main_page__movies, .main_page__tv_series, .main_page__bookmarked {
-    max-width: 40rem;
+@media screen and (min-width: 1440px) {
+  .main_page {
+    max-width: 1440px;
     margin: 0 auto;
   }
 }

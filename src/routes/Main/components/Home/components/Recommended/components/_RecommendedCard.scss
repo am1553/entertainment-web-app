@@ -7,8 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 20rem;
-    height: 110px;
+    width: clamp(10.25rem, 40vw, 13.75rem);
+    height: clamp(6.875rem, 20vw, 8.75rem);
     .background_image {
         width: 100%;
     }
@@ -43,6 +43,15 @@
         }
         h4 {
             margin: 0.1rem 0 1rem;
+        }
+    }
+}
+
+@media screen and (min-width: 980px) {
+    .recommended_card_container {
+        &__card {
+            width: clamp(13.75rem, 30vw, 17.75rem);
+            height: clamp(8.75rem, 10vw, 10.875rem);
         }
     }
 }

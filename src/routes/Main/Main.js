@@ -13,7 +13,7 @@ function Main() {
   const [searchResult, setSearchResult] = useState(false)
   const [menuNav, setMenuNav] = useState(<Home />)
   const [panel, setPanel] = useState(true)
-  const [navItem, setNavItem] = useState(menuNav.type.name)
+  const [navItem, setNavItem] = useState('Home')
 
 
   return (

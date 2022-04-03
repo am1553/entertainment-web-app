@@ -6,7 +6,6 @@ import Home from '../../../routes/Main/components/Home/Home'
 
 function SearchResult(props) {
 
-    console.log(props.nav_item)
 
   return (
     <div className='search_result'>

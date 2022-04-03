@@ -20,7 +20,7 @@ function MainHeader(props) {
 
   return (
     <div className='main_page__header'>
-        <img src={ Logo } alt="" />
+        <img src={ Logo } alt="" className='header_logo' />
 
         <nav>
 
@@ -44,7 +44,7 @@ function MainHeader(props) {
                     setTvSeriesNavActive(false)
                     setBookMarkNavActive(false)
                     props.menu_nav(<Movies />)
-                    props.nav_item('Movies')
+                    props.nav_item('Movie')
                 } }
             >
                 <img src={ MoviesNav } alt="" />

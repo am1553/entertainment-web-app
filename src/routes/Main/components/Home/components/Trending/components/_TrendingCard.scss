@@ -1,7 +1,7 @@
 .trending_card {
     background-color: $navy-blue;
-    height: 140px;
-    min-width: 240px;
+    height: clamp(8.75rem, 25vw, 14.375rem);
+    min-width: clamp(15rem, 50vw, 29.375rem);
     border-radius: 0.5rem;
     position: relative;
     margin: 1rem 1rem 2rem 0;

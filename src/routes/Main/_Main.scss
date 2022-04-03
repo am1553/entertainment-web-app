@@ -8,9 +8,10 @@
 .main_page {
     margin-bottom: 3rem;
 }
-@media screen and (min-width: 580px) {
-    .main_page__home, .main_page__movies, .main_page__tv_series, .main_page__bookmarked {
-        max-width: 40rem;
+
+@media screen and (min-width: 1440px) {
+    .main_page {
+        max-width: 1440px;
         margin: 0 auto;
     }
 }
